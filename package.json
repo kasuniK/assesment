@@ -1,0 +1,17 @@
+{
+  "name": "automation",
+  "version": "1.0.0",
+  "description": "test automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run cucumber",
+    "cucumber": "./node_modules/.bin/cucumber-js --world-parameters '{\"base\":\"http://localhost:3000\"}'",
+    "examples": "cucumber-js examples"
+  },
+  "author": "kasunimadu86@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@harver/bat": "^1.1.1",
+    "cucumber": "^6.0.5"
+  }
+}
